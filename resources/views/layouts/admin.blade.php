@@ -21,7 +21,7 @@
 	<link rel="apple-touch-icon" sizes="76x76" href="content/img/apple-icon.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="content/img/favicon.png">
 </head>
-
+@if(!Auth::guest())
 <body>
 	<!-- WRAPPER -->
 	<div id="wrapper">
@@ -80,7 +80,9 @@
 						<!-- <li>
 							<a class="update-pro" href="https://www.themeineed.com/downloads/klorofil-pro-bootstrap-admin-dashboard-template/?utm_source=klorofil&utm_medium=template&utm_campaign=KlorofilPro" title="Upgrade to Pro" target="_blank"><i class="fa fa-rocket"></i> <span>UPGRADE TO PRO</span></a>
 						</li> -->
+									
 					</ul>
+				
 				</div>
 			</div>
 		</nav>
@@ -112,17 +114,22 @@
 				</nav>
 			</div>
 		</div>
+
+		
 		<!-- END LEFT SIDEBAR -->
 		<!-- MAIN -->
 		<div class="main">
+		@endif
 		@yield('content')
 		</div>
 		<!-- END MAIN -->
+		@if(!Auth::guest())	
 		<footer>
 			<div class="container-fluid">
 				<p class="copyright">&copy; 2017 <a href="https://www.themeineed.com" target="_blank">Theme I Need</a>. All Rights Reserved.</p>
 			</div>
 		</footer>
+		@endif
 	</div>
 	<!-- END WRAPPER -->
 	<!-- Javascript -->

@@ -1,3 +1,6 @@
+@extends('layouts.admin')
+@section('content')
+
 <!doctype html>
 <html lang="en" class="fullscreen-bg">
 
@@ -90,3 +93,4 @@
 </body>
 
 </html>
+@endsection
