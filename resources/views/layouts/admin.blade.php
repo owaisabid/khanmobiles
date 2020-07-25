@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-///////
-
 <head>
 	<title>Dashboard | Klorofil - Free Bootstrap Dashboard Template</title>
 	<meta charset="utf-8">
@@ -25,9 +23,7 @@
 </head>
 
 <body>
-    <!-- WRAPPER -->
-    
-    <h1>Owais</h1>
+	<!-- WRAPPER -->
 	<div id="wrapper">
 		<!-- NAVBAR -->
 		<nav class="navbar navbar-default navbar-fixed-top">
@@ -120,10 +116,8 @@
 		<!-- MAIN -->
 		<div class="main">
 		@yield('content')
-			<!-- END MAIN CONTENT -->
 		</div>
 		<!-- END MAIN -->
-		<div class="clearfix"></div>
 		<footer>
 			<div class="container-fluid">
 				<p class="copyright">&copy; 2017 <a href="https://www.themeineed.com" target="_blank">Theme I Need</a>. All Rights Reserved.</p>
